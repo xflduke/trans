@@ -3,6 +3,7 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.security.NoSuchAlgorithmException;
 import java.text.ParseException;
 import java.util.Map.Entry;
 import java.util.Properties;
@@ -21,8 +22,8 @@ public class TransToOzo {
         }
         
         try {
-        	
-        	Properties props = TransProperties.getInstance(args[0]);
+            
+            Properties props = TransProperties.getInstance(args[0]);
         
             // フルJMeterファイル
             // 日付ごとのJMeter部分
@@ -46,7 +47,7 @@ public class TransToOzo {
             
             // TODO
             if (keyParser != null) {
-            	rlt = keyParser.replaceKey(rlt);
+                rlt = keyParser.replaceKey(rlt);
             }
             
             // TODO 出力
@@ -66,7 +67,7 @@ public class TransToOzo {
             runJmeter(file.getAbsolutePath());
             
             
-        } catch (ParseException | IOException e) {
+        } catch (ParseException | IOException | NoSuchAlgorithmException e) {
             // TODO 自動生成された catch ブロック
             e.printStackTrace();
         }
@@ -74,7 +75,7 @@ public class TransToOzo {
     }
     
     public static void runJmeter(String path) throws IOException {
-    	// JMeter Engine
+        // JMeter Engine
         StandardJMeterEngine jmeter = new StandardJMeterEngine();
 
         // Initialize Properties, logging, locale, etc.
