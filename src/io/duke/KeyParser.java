@@ -42,7 +42,7 @@ public class KeyParser {
 			dataMap.put("taskid", new Integer(tskIdx++).toString());
 		}
 		dataMap.put("db_EDIT_GROUP", TransProperties.getInstance().getProperty("db_EDIT_GROUP"));
-		dataMap.put("db_EDIT_UID", TransProperties.getInstance().getProperty("db_EDIT_UID"));
+//		dataMap.put("db_EDIT_UID", TransProperties.getInstance().getProperty("db_EDIT_UID"));
 		dataMap.put("challenge", TransProperties.getInstance().getProperty("challenge"));
 		dataMap.put("response", TransProperties.getInstance().getProperty("response"));
 
@@ -51,7 +51,7 @@ public class KeyParser {
 		dataMap.put("日付-1", formatDate(bean.getNowDate()));
 		dataMap.put("BOSS名前", TransProperties.getInstance().getProperty("bossName"));
 		dataMap.put("名前", TransProperties.getInstance().getProperty("name"));
-		dataMap.put("社員番号", bean.getSyain_no());
+		dataMap.put("社員番号", TransProperties.getInstance().getProperty("ozoUser"));
 		dataMap.put("出勤時刻", bean.getStartTime());
 		dataMap.put("退勤時刻", bean.getEndTime());
 		dataMap.put("休憩1_開始", "12:00"); // TODO
