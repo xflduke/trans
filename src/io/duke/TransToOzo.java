@@ -79,7 +79,7 @@ public class TransToOzo {
         StandardJMeterEngine jmeter = new StandardJMeterEngine();
 
         // Initialize Properties, logging, locale, etc.
-        JMeterUtils.loadJMeterProperties("bin/jmeter.properties");
+        JMeterUtils.loadJMeterProperties(TransProperties.getInstance().getProperty("jmeterProperties"));
         JMeterUtils.setJMeterHome(TransProperties.getInstance().getProperty("jmeterHome"));
         JMeterUtils.initLocale();
 
