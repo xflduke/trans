@@ -4,8 +4,8 @@ Finished the base ! Now you can use this tools to transport csv which you downlo
 and auto commit the dayinfo to ozo.
 
 Todo list:
-.mulity project 
-.auto input 備考
-.mulity rest time
-.auto fetch appspot
-.and so on...
+>> .mulity project 
+>> .auto input 備考
+>> .mulity rest time
+>> .auto fetch appspot
+>> .and so on...
