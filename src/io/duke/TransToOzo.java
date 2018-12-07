@@ -90,8 +90,17 @@ public class TransToOzo {
         File file = new File(path);
         HashTree testPlanTree = SaveService.loadTree(file);
         // file.close();
+        // check proxy
+        Properties jmeterProps = JMeterUtils.getJMeterProperties();
+        for (Entry<Object, Object> entry : TransProperties.getInstance().entrySet()) {
+        	if (entry.getKey().toString().indexOf("http") == 0 && entry.getValue().toString().length() > 0) {
+        		jmeterProps.setProperty(entry.getKey().toString(), entry.getValue().toString());
+        	}
+        }
+        
         // Run JMeter Test
         jmeter.configure(testPlanTree);
+        
         jmeter.run();
     }
 
