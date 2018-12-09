@@ -6,4 +6,4 @@ and auto commit the dayinfo to ozo.
 
 > .Todo list:
 
->> .you may see issues fot that,
+>> .you may see issues for that,
