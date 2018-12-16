@@ -13,7 +13,7 @@ and auto commit the dayinfo to ozo.
  
 ## 1.confs.zipを該当ファイルに所在フォルダに解凍 
  
-## 2.解答したファイル群に対し、「transSystem.properties」を下記の項目に対して編集する。
+## 2.解凍したファイル群に対し、「transSystem.properties」を下記の項目に対して編集する。
  
 ###  ① 自分の状況に合わせて ・ozoUser ・ozoPass ・bossName ・name 
   
