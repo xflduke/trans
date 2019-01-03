@@ -11,6 +11,9 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
+
+import io.duke.bean.KinmuCSVBean;
+
 import java.util.Properties;
 
 public class KeyParser {
