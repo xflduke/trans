@@ -13,8 +13,6 @@ import org.apache.jmeter.save.SaveService;
 import org.apache.jmeter.util.JMeterUtils;
 import org.apache.jorphan.collections.HashTree;
 
-import io.duke.bean.KinmuCSVBean;
-
 public class TransToOzo {
     
     public static void main(String[] args) {
