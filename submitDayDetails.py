@@ -1,5 +1,4 @@
 import requests
-import datetime
 import properties as pp
 formatDate = lambda data: data[0:4] + '/' + data[4:6] + '/' + data[6:]
 
