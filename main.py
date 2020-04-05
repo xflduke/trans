@@ -76,7 +76,8 @@ headers = headers
 print(responseKinmu.status_code)
 
 # get daily info 
-daysData = loadKinmuData.loadCsvFromUrl(pp.PP['id'], pp.PP['target_date'])
+utils = dukeUtils.utils()
+daysData = loadKinmuData.loadCsvFromUrl(pp.PP['id'], utils.getKinmuMonth(pp.PP['target_date']))
 for index, target_list in daysData.iterrows():
   id = str(target_list['id']).zfill(4) # id's length is 4, rpadding 0
   date = target_list['date']

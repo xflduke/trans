@@ -1,4 +1,5 @@
 import hashlib
+import datetime
 
 class Alg():
 
@@ -11,3 +12,16 @@ class Alg():
         algSHA512 = hashlib.sha512()
         algSHA512.update(text.encode('UTF-8'))
         return algSHA512.hexdigest()
+
+
+class utils():
+
+    def getKinmuMonth(self, text):
+        if not text :
+            # days that before 10 will treated as pre month
+            dt = datetime.datetime.now()
+            if dt.day <= 5 :
+                dt = dt - datetime.timedelta(days=11)
+            return dt.strftime('%Y%m')
+        else:
+            return text
