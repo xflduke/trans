@@ -1,4 +1,4 @@
-# trans(2020/01/01 udpate to ozo3!)
+# trans(2020/01/01 udpate to ozo3)
 Auto commit to ozo from appspot csv
 
 # env settings
